@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      name: biswa
+      password: biswa
+  application:
+        name: Spring-Security-Demo-service
+  datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:postgresql://localhost:5432/fixedordering
+        username: postgres
+        password: postgres
+        
+server:  port: 8282
+  servlet:    context-path: /
