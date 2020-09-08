@@ -1,0 +1,37 @@
+jwt:
+  secret: "azfyfuqsvyusyg67567823iuhiqwxwodiowdcn3w8923"
+ 
+spring:
+  application:
+    name: support-portal
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/authorizepoc
+    username: postgres
+    password: postgres
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mappings: false
+    
+    
+server:
+  port: 8080
+  error:
+    path: /error-path
+#    whitelabel:
+#      enabled: false
+  
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+         
+         
+         
+
+  
